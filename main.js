@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () =>{
+document.addEventListener('DOMContentLoaded', () => {
 //the cards
 const cardArray = [
     {
@@ -15,7 +15,7 @@ const cardArray = [
     },
     {
         name: 'chopper',
-        img: 'images/ace.png'
+        img: 'images/chopper.png'
     },
     {
         name: 'nico-robin',
@@ -23,7 +23,7 @@ const cardArray = [
     },
     {
         name: 'franky',
-        img: 'images/ace.png'
+        img: 'images/franky.png'
     },
         {
         name: 'ace',
@@ -39,7 +39,7 @@ const cardArray = [
     },
     {
         name: 'chopper',
-        img: 'images/ace.png'
+        img: 'images/chopper.png'
     },
     {
         name: 'nico-robin',
@@ -47,11 +47,11 @@ const cardArray = [
     },
     {
         name: 'franky',
-        img: 'images/ace.png'
+        img: 'images/franky.png'
     }
 ]
 
-cardArray.sort(() => 0.5 - Math.random())
+  cardArray.sort(() => 0.5 - Math.random())
 
   const grid = document.querySelector('.grid')
   const resultDisplay = document.querySelector('#result')
@@ -69,8 +69,9 @@ cardArray.sort(() => 0.5 - Math.random())
       grid.appendChild(card)
     }
   }
-//check
-function checkForMatch() {
+
+  //check for matches
+  function checkForMatch() {
     const cards = document.querySelectorAll('img')
     const optionOneId = cardsChosenId[0]
     const optionTwoId = cardsChosenId[1]
@@ -99,16 +100,17 @@ function checkForMatch() {
       resultDisplay.textContent = 'Yattaaaa!!! You are the Pirate King!!'
     }
   }
-//flip the card
-function flipCard() {
+
+  //flip your card
+  function flipCard() {
     let cardId = this.getAttribute('data-id')
     cardsChosen.push(cardArray[cardId].name)
-    cardsChosen.push(cardId)
+    cardsChosenId.push(cardId)
     this.setAttribute('src', cardArray[cardId].img)
     if (cardsChosen.length ===2) {
-        setTimeout(checkForMatch, 500)
+      setTimeout(checkForMatch, 500)
     }
-}
+  }
 
-createBoard()
+  createBoard()
 })
