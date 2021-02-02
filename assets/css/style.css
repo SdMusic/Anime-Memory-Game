@@ -1,5 +1,146 @@
+@font-face {
+    font-family: "tomahackregular";
+    src: url("../fonts/tomahack-webfont.woff2") format("woff2"),
+         url("../fontstomahack-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(rgb(124, 255, 248),rgb(92, 248, 240), rgb(46, 48, 170), rgb(37, 39, 141));
+  font-family: "tomahackregular";
+}
+
+.title{
+    text-align: center;
+    font-family: tomahackregular;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 6em;
+    color: whitesmoke;
+    text-shadow: 2px 2px #a1a19c;
+}
+
+.scoreboard{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+} 
+
 .grid {
-    display: flexbox;
-    
-    
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 1px;
+    justify-content: center;
+}
+
+.button {
+    display:inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: tomahackregular, sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#a1a193;
+    text-align:center;
+    transition: all 0.2s;
+    text-align: center;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+
+img {
+    height:250px;
+    width: 200px;
+}
+
+.cards.hvr-grow:hover {
+    transition-delay: 0.2s;
+    z-index: 1000;
+}
+div.grid img{
+    border-radius: 16px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 1px;
+        justify-content: center;
+    }
+    img {
+    height:125px;
+    width: 100px;
+}
+
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.menu {
+    border: 3px ridge #414744;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 520px;
+}
+
+.h2 a h2 {
+    font-family: tomahackregular;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3vw;
+    position: absolute;
+    color: #cacaca;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner{
+    width: 100%;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: -1;
+    height: 200px;
+    overflow: hidden;
+}
+
+.bannertext {
+    position: absolute;
+    width: 100%;
+    font-size: 9vw;
+    color: #d1d1c9;
+    text-shadow: 2px 2px #a1a19c;
+}
+
+/*------------------------------------Navbar*/
+
+.navbar-nav li {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.nav-link {
+   text-decoration-color: #d1d1c9;
+}
+
+.bg-grey{
+    background-color: #414744;
 }

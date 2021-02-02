@@ -1,0 +1,235 @@
+body {
+    background-color: rgb(202, 204, 188);
+    font-family: "tomahackregular";
+    }
+/*fonts */
+
+
+@font-face {
+    font-family: "tomahackregular";
+    src: url("../fonts/tomahack-webfont.woff2") format("woff2"),
+         url("../fontstomahack-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+/* headers */
+
+.banner{
+    width: 100%;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: -1;
+    height: 200px;
+    overflow: hidden;
+}
+
+.bannertext {
+    position: absolute;
+    width: 100%;
+    font-size: 9vw;
+    color: #d1d1c9;
+    text-shadow: 2px 2px #a1a19c;
+
+}
+
+.h2 a h2 {
+    font-family: tomahackregular;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3vw;
+    position: absolute;
+    color: #cacaca;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+h1 {
+    font-family: tomahackregular;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 90px;
+}
+
+/* buttons */
+
+.button {
+    display:inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: tomahackregular, sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#a1a193;
+    text-align:center;
+    transition: all 0.2s;
+    text-align: center;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+
+.button:hover {
+    background-color:#a6a895;
+}
+
+/* images */
+
+.menu {
+    border: 3px ridge #414744;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}
+
+/* colours */
+
+.bg-grey {
+    background-color: #909187;
+}
+
+.bg-fullbar {
+    background-image: url("../images/stocked-bar.jpg");
+}
+
+/* cards */
+
+.card {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.btn-card{
+    color:#FFFFFF;
+    background-color:#a1a193;
+    border-color: #8a918e;
+}
+
+.btn-card:hover{
+    color: #414744;
+}
+
+
+/*------------------------Tabbed windows */
+
+.content {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px;
+}
+.nav-pills {
+  width: 450px;
+}
+.nav-item {
+  width: 50%;
+}
+.nav-tabs .nav-link {
+  font-weight: bold;
+  padding-top: 13px;
+  text-align: center;
+  background: hsl(154 33% 85% / 1);
+  color: black;
+  border-radius: 30px;
+  height: 80px;
+}
+.nav-tabs .nav-link.active {
+  background: #fff;
+  color: #000;
+}
+
+.nav-pills .nav-link.active {
+  background: #fff;
+  color: #000;
+}
+
+.nav-tabs {
+  padding-bottom: 5px;
+}
+.nav {
+  margin-bottom: 15px;
+}
+
+.tab-content {
+  position: relative;
+  height: 290px;
+  margin-top: -50px;
+  background: #fff;
+  color: #000;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 1000;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 50px;
+  border-right: 1px solid rgb(231, 231, 231);
+  border-left: 1px solid rgb(231, 231, 231);
+}
+
+.tab-content button {
+  border-radius: 15px;
+  width: 100px;
+  margin: 0 auto;
+  float: right;
+}
+
+/*------------------------------------Navbar*/
+
+.navbar {
+    font-family: tomahackregular;
+    font-weight: bold;
+    font-style: normal;
+}
+.navbar-nav li {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+/* footer */
+
+.footer {
+    background-image: url("../images/cocktail-collage.jpg");
+    backdrop-filter: blur(2px) brightness(1);
+    background-color: grey;
+    height: 500px;
+    margin-top: 40px;
+}
+
+.footer p {
+    background-color: rgba(193, 226, 212, 0.9);
+    border: 3px ridge #414744;
+    
+}
+
+.social-icon {  
+    text-align: center;
+}
+
+.social-icon a i {
+  text-shadow: 2px 2px #a1a19c;  
+  font-size: 260%;
+  margin: 10px;
+  padding: 10px;
+  color:rgb(202, 219, 213);
+}
+.social-icon a i:hover{
+    color: #414744;
+}
+.link-block {
+    display: block;
+    position: relative;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "tomahackregular";
+    color:rgb(202, 219, 213);
+}
+
+.link-block:hover{
+    color: #414744;
+}

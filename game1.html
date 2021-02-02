@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The One Piece Memory Game</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+        <h1 class="title">ANIME MEMORY GAME</h1>
+        <!--  Start of Navbar  -->
+      <nav class="position-relative bg-grey navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="level2.html"
+                >LEVEL 2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="level3.html"
+                >LEVEL 3 <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<!--  End of Navbar  -->
+        <div class="center">
+        <button class="button" onclick="stopMusic()">Stop Music</button>
+        <button class="button" onclick="bgMusic()"> Play music</button>
+        <button class="button"><a href="game1.html">Refresh</a></button>
+        </div>
+        <div id="score"></div>
+        <div class="row">
+            <div class="col">
+                <div><h2>Moves:<span class="moves"></span></h2></div>
+            </div>
+            <div class="col">
+                <div><h2>Time:<span id="timer"></span></h2></div>
+            </div>
+        </div>
+                <div><span id="result"></span></div>                
+                    <div class="center">
+                        <div class="grid"></div>
+                    </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</body>
+</html>
