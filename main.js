@@ -186,6 +186,6 @@ function finalScore(){
 
 //Resart Button
 
-function resart() {
+function restart() {
     window.location.reload();
 }
