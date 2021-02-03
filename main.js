@@ -181,5 +181,11 @@ function moveCounter() {
 const score = document.querySelector("score");
 
 function finalScore(){
-   document.getElementById("score").innerHTML = moves/totalSeconds*1000;
+   document.getElementById("score").innerHTML = 'Your New Score:' + moves/totalSeconds*1000;
+}
+
+//Resart Button
+
+function resart() {
+    window.location.reload();
 }

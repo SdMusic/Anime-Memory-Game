@@ -1,3 +1,12 @@
+//var overlay = $('#overlay');
+ //   overlay.on('click', function (e) {
+ //       overlay
+ //           .hide()
+ //           .off();
+  //          startTimer();
+  //          bgMusic();
+ //   });
+
 document.addEventListener('DOMContentLoaded', () => {
 
 //The Cards
@@ -195,7 +204,7 @@ function stopMusic(){
 }
 
 //The Timer
-
+function startTimer(){
 var timer = setInterval(countTimer, 1000);
 var totalSeconds = 0;
 function countTimer() {
@@ -209,7 +218,7 @@ function countTimer() {
            document.getElementById("timer").innerHTML =  minute + ":" + seconds;
            
         }
-
+}
 
 function stopTimer() {
       clearInterval(timer);
@@ -231,3 +240,8 @@ const score = document.querySelector("score");
 function finalScore(){
    document.getElementById("score").innerHTML = moves/totalSeconds*1000;
 }
+
+function restart() {
+    window.location.reload();
+}
+

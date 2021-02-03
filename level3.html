@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The One Piece Memory Game</title>
-
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
 
     <link
@@ -52,7 +52,7 @@
         <div class="center">
         <button class="button" onclick="stopMusic()">Stop Music</button>
         <button class="button" onclick="bgMusic()"> Play music</button>
-        <button class="button"><a href="game1.html">Refresh</a></button>
+        <button class="button" onclick="restart()">Restart</button>
         </div>
         <div class="row">
             <div id="score"></div>
@@ -65,10 +65,14 @@
                 <div><h2>Time:<span id="timer"></span></h2></div>
             </div>
         </div>
+        <div id="overlay">
+            <div id="startgame">START GAME</div>
+            </div>
                 <div><span id="result"></span></div>                
                     <div class="center">
                         <div class="grid"></div>
                     </div>
+        
     <script src="level3.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </body>

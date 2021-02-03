@@ -207,3 +207,7 @@ const score = document.querySelector("score");
 function finalScore(){
    document.getElementById("score").innerHTML = moves/totalSeconds*1000;
 }
+
+function restart() {
+    window.location.reload();
+}
