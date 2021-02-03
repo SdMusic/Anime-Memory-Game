@@ -27,7 +27,31 @@ const cardArray = [
         name: 'franky',
         img: 'images/franky.png'
     },
-        {
+    {
+        name: 'bellamy',
+        img: 'images/bellamy.png'
+    },
+    {
+        name: 'crocodile',
+        img: 'images/crocodile.png'
+    },
+    {
+        name: 'doruflamingo',
+        img: 'images/doruflamingo.png'
+    },
+    {
+        name: 'foxy',
+        img: 'images/foxy.png'
+    },
+    {
+        name: 'mihawk',
+        img: 'images/mihawk.png'
+    },
+    {
+        name: 'kuro',
+        img: 'images/kuro.png'
+    },
+    {
         name: 'ace',
         img: 'images/ace.png'
     },
@@ -50,7 +74,31 @@ const cardArray = [
     {
         name: 'franky',
         img: 'images/franky.png'
-    }
+    },
+    {
+        name: 'bellamy',
+        img: 'images/bellamy.png'
+    },
+    {
+        name: 'crocodile',
+        img: 'images/crocodile.png'
+    },
+    {
+        name: 'doruflamingo',
+        img: 'images/doruflamingo.png'
+    },
+    {
+        name: 'foxy',
+        img: 'images/foxy.png'
+    },
+    {
+        name: 'mihawk',
+        img: 'images/mihawk.png'
+    },
+    {
+        name: 'kuro',
+        img: 'images/kuro.png'
+    },
 ];
 
 //The Card Shuffle
