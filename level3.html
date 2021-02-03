@@ -17,16 +17,59 @@
     
 </head>
 <body>
-    <div>
         <h1 class="title">ANIME MEMORY GAME</h1>
-        <button><button class="button"><a href="game1.html">refresh</a></button></button>
-         <button><button class="button"><a href="home.html">home</a></button></button>
-                <h2>Score:<span id="result"></span><span id="timer">Time</span></h2>
+        <!--  Start of Navbar  -->
+      <nav class="position-relative bg-grey navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="level2.html"
+                >LEVEL 2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="level3.html"
+                >LEVEL 3 <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<!--  End of Navbar  -->
+        <div class="center">
+        <button class="button" onclick="stopMusic()">Stop Music</button>
+        <button class="button" onclick="bgMusic()"> Play music</button>
+        <button class="button"><a href="game1.html">Refresh</a></button>
+        </div>
+        <div class="row">
+            <div id="score"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 d-flex justify-content-center">
+                <div><h2>Moves:<span class="moves"></span></h2></div>
+            </div>
+            <div class="col-lg-6 col-sm-12 d-flex justify-content-center pr-5">
+                <div><h2>Time:<span id="timer"></span></h2></div>
+            </div>
+        </div>
+                <div><span id="result"></span></div>                
                     <div class="center">
                         <div class="grid"></div>
                     </div>
-            <button class="button"><a href="index.html">game2</a></button>
-    </div>
-    <script src="level3.js" charset="utf-8"></script>
+    <script src="level3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </body>
 </html>

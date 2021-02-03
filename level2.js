@@ -62,7 +62,7 @@ const cardArray = [
     {
         name: 'franky',
         img: 'images/franky.png'
-    }
+    },
     {
         name: 'bellamy',
         img: 'images/bellamy.png'
