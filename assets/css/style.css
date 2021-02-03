@@ -145,43 +145,7 @@ div.grid img{
     background-color: #414744;
 }
 
-.footer {
-    background-image: url("../images/cocktail-collage.jpg");
-    backdrop-filter: blur(2px) brightness(1);
-    background-color: grey;
-    height: 300px;
-    margin-top: 40px;
-}
-
-.footer p {
-    background-color: rgba(193, 226, 212, 0.9);
-    border: 3px ridge #414744;
-    
-}
-
-.social-icon {  
-    text-align: center;
-}
-
-.social-icon a i {
-  text-shadow: 2px 2px #a1a19c;  
-  font-size: 260%;
-  margin: 10px;
-  padding: 10px;
-  color:rgb(202, 219, 213);
-}
-.social-icon a i:hover{
-    color: #414744;
-}
-.link-block {
-    display: block;
-    position: relative;
-    padding: 10px;
-    font-size: 1rem;
-    font-family: "tomahackregular";
-    color:rgb(202, 219, 213);
-}
-
-.link-block:hover{
-    color: #414744;
+.instructions{
+    font-size: 20px;
+    padding: 20px 0px;
 }
