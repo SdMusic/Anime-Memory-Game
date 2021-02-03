@@ -1,11 +1,11 @@
-//var overlay = $('#overlay');
- //   overlay.on('click', function (e) {
- //       overlay
- //           .hide()
- //           .off();
-  //          startTimer();
-  //          bgMusic();
- //   });
+var overlay = $('#overlay');
+  overlay.on('click', function (e) {
+        overlay
+           .hide()
+            .off();
+           startTimer();
+            bgMusic();
+   });
 
 document.addEventListener('DOMContentLoaded', () => {
 

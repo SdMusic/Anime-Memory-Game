@@ -34,7 +34,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(6,auto);
     grid-gap: 1px;
     justify-content: center;
 }
@@ -59,7 +59,7 @@ body {
 
 img {
     height:250px;
-    width: 200px;
+    width: 190px;
 }
 
 .cards.hvr-grow:hover {
@@ -152,21 +152,20 @@ div.grid img{
 
 #overlay {
     background: rgba(0, 0, 0, .4);
-    bottom: 0px;
+    bottom: auto;
     left: 0px;
-    position: absolute;
+    position: fixed;
     right: 0px;
-    top: 200;
+    top: auto;
     z-index: 10;
-    height: 80%;
 }
 
 #startgame {
     height: 300px;
-    margin: 20px auto 0;
+    margin: auto;
     width: 300px;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 80px;
     font-size: 50px;
     color: #a1a19c;
 }
