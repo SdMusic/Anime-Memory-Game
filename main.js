@@ -58,6 +58,7 @@ const cardArray = [
   cardArray.sort(() => 0.5 - Math.random());
 
   const grid = document.querySelector('.grid');
+  const resultDisplay = document.querySelector('#result')
   let cardsChosen = [];
   let cardsChosenId = [];
   let cardsWon = [];
@@ -135,6 +136,9 @@ var win = new Audio('assets/audio/win.wav');
 var flipSound = new Audio('assets/audio/woosh.wav');
 flipSound.volume = 0.1;
 
+function bgMusic() {
+    bgmusic.play();
+}
 
 function stopMusic(){
     bgmusic.pause();
@@ -172,6 +176,8 @@ function moveCounter() {
 }
 
 //Final Score
+
+const score = document.querySelector("score");
 
 function finalScore(){
    document.getElementById("score").innerHTML = moves/totalSeconds*1000;
