@@ -5,6 +5,7 @@ var overlay = $('#overlay');
             .off();
            startTimer();
             bgMusic();
+
    });
 
 document.addEventListener('DOMContentLoaded', () => {
