@@ -3,8 +3,8 @@ var overlay = $('#overlay');
         overlay
            .hide()
             .off();
+           bgMusic();
            startTimer();
-            bgMusic();
 
    });
 
@@ -116,7 +116,7 @@ const cardArray = [
   cardArray.sort(() => 0.5 - Math.random());
 
   const grid = document.querySelector('.grid');
-  const resultDisplay = document.querySelector('#result')
+  const resultDisplay = document.querySelector('#result');
   let cardsChosen = [];
   let cardsChosenId = [];
   let cardsWon = [];
@@ -146,7 +146,7 @@ const cardArray = [
       cards[optionTwoId].setAttribute('src', 'images/blank.jpg');
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
-      laugh.play()
+      laugh.play();
       cards[optionOneId].classList.remove('hvr-float-shadow');
       cards[optionTwoId].classList.remove('hvr-float-shadow');
       cards[optionOneId].removeEventListener('click', flipCard);
@@ -177,7 +177,7 @@ const cardArray = [
     flipSound.play();
     moveCounter();
     if (cardsChosen.length ===2) {
-      setTimeout(checkForMatch, 500);
+      setTimeout(checkForMatch, 700);
     }
   }
 
@@ -190,9 +190,9 @@ const cardArray = [
 var bgmusic = new Audio('assets/audio/bg-music.mp3');
 var win = new Audio('assets/audio/win.wav');
 var flipSound = new Audio('assets/audio/woosh.wav');
-var laugh = new Audio('assets/audio/luffy-laugh.wav')
+var laugh = new Audio('assets/audio/luffy-laugh.wav');
 flipSound.volume = 0.1;
-laugh.volume = 0.1
+laugh.volume = 0.1;
 
 function bgMusic() {
     bgmusic.play();
@@ -205,8 +205,11 @@ function stopMusic(){
 }
 
 //The Timer
-function startTimer(){
-var timer = setInterval(countTimer, 1000);
+function startTimer() {
+    timer = setInterval(countTimer, 1000);
+}
+
+var timer = [];
 var totalSeconds = 0;
 function countTimer() {
            ++totalSeconds;
@@ -217,14 +220,11 @@ function countTimer() {
            if(seconds < 10)
              seconds = "0"+seconds;
            document.getElementById("timer").innerHTML =  minute + ":" + seconds;
-           
         }
-}
 
 function stopTimer() {
       clearInterval(timer);
     }
-    
 //Move Counter
 
 let moves = 0;
@@ -239,7 +239,9 @@ function moveCounter() {
 const score = document.querySelector("score");
 
 function finalScore(){
-   document.getElementById("score").innerHTML = moves/totalSeconds*1000;
+   var scoreSum = moves/totalSeconds*1000
+   var scoreResult =  Math.round(scoreSum)
+   document.getElementById("score").innerHTML = 'Your Score:  ' + scoreResult;
 }
 
 function restart() {

@@ -6,7 +6,7 @@
     <title>The One Piece Memory Game</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -17,9 +17,9 @@
     
 </head>
 <body>
-        <h1 class="title">ANIME MEMORY GAME</h1>
-        <!--  Start of Navbar  -->
-      <nav class="position-relative bg-grey navbar navbar-expand-lg navbar-light">
+    <h1 class="title">ANIME MEMORY GAME Lv2</h1>
+<!--  Start of Navbar  -->
+    <nav class="position-relative bg-grey navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
@@ -32,27 +32,27 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >HOME <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="level1.html"
-                >LEVEL 1 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="level3.html"
-                >LEVEL 3 <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"
+                    >HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="level1.html"
+                    >LEVEL 1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="level3.html"
+                    >LEVEL 3 <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
 <!--  End of Navbar  -->
-        <div class="center">
-        <button class="button" onclick="stopMusic()">Stop Music</button>
-        <button class="button" onclick="bgMusic()"> Play music</button>
-        <button class="button" onclick="restart()">Restart</button>
+        <div class="center1">
+            <button class="button" onclick="stopMusic()">Stop Music</button>
+            <button class="button" onclick="bgMusic()"> Play music</button>
+            <button class="button" onclick="restart()">Restart</button>
         </div>
         <div class="row">
             <div id="score"></div>
@@ -65,11 +65,13 @@
                 <div><h2>Time:<span id="timer"></span></h2></div>
             </div>
         </div>
+        <div class="hv-rectangle-in" id="overlay">
+            <div id="startgame">START GAME</div>
+        </div>
                 <div><span id="result"></span></div>                
-                    <div class="center">
-                        <div class="grid"></div>
-                    </div>
-    <script src="level2.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+                <div class="center">
+                    <div class="grid"></div>
+                </div>
+<script src="level2.js"></script>
 </body>
 </html>

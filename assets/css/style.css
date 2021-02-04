@@ -11,9 +11,11 @@ html {
 }
 
 body {
-  margin: 0;
   background: linear-gradient(rgb(124, 255, 248),rgb(92, 248, 240), rgb(46, 48, 170), rgb(37, 39, 141));
   font-family: "tomahackregular";
+  overflow-x: hidden;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .title{
@@ -21,9 +23,11 @@ body {
     font-family: tomahackregular;
     font-weight: bold;
     font-style: normal;
-    font-size: 6em;
+    font-size: 6vw;
     color: whitesmoke;
     text-shadow: 2px 2px #a1a19c;
+    margin: auto;
+    padding-bottom: 20px;
 }
 
 .scoreboard{
@@ -58,8 +62,8 @@ body {
 }
 
 img {
-    height:250px;
-    width: 190px;
+    height:245px;
+    width: 185px;
 }
 
 .cards.hvr-grow:hover {
@@ -90,26 +94,35 @@ div.grid img{
   width: 50%;
   padding: 10px;
 }
+.center1 {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+}
 
 .menu {
-    border: 3px ridge #414744;
+    border: 15px outset #ffffff;
     position: relative;
-    z-index: -1;
-    width: 100%;
-    height: 520px;
+    z-index: 10;
+    width: 300px;
+    height: 400px;
 }
 
 .h2 a h2 {
     font-family: tomahackregular;
     font-weight: bold;
     font-style: normal;
-    font-size: 3vw;
+    font-size: 4vw;
     position: absolute;
-    color: #cacaca;
+    color: white;
     text-align: center;
     top: 50%;
     left: 50%;
+    z-index: 20;
     transform: translate(-50%, -50%);
+    text-shadow: 2px 2px #555553;
 }
 
 .banner{
@@ -137,17 +150,15 @@ div.grid img{
   margin-right: 60px;
 }
 
-.nav-link {
-   text-decoration-color: #d1d1c9;
-}
-
 .bg-grey{
     background-color: #414744;
 }
 
 .instructions{
     font-size: 20px;
-    padding: 20px 0px;
+    padding: 20px 10px;
+    border: 5px ridge #ffffff;
+    background-color: aliceblue;
 }
 
 /*-- overlay --*/
@@ -210,4 +221,20 @@ div.grid img{
 .hv-rectangle-in:active:before {
   -webkit-transform: scale(0);
   transform: scale(0);
+}
+
+#score {
+    padding-left: 20px;
+}
+
+.index-bg{
+    z-index: -2;
+    background-image: url("../../images/red-rope-c.png");
+    background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 35px;
+  }
 }
