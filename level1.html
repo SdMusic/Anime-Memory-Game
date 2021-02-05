@@ -14,7 +14,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css">
-    
 </head>
 <body>
     <h1 class="title">ANIME MEMORY GAME Lv1</h1>
@@ -49,14 +48,17 @@
         </div>
     </nav>
 <!--  End of Navbar  -->
+<!-- Start Music buttons and Restart buttons-->
         <div class="center1">
             <button class="button" onclick="stopMusic()">Stop Music</button>
             <button class="button" onclick="bgMusic()"> Play music</button>
             <button class="button" onclick="restart()">Restart</button>
         </div>
+<!-- End of Music buttons and Restart buttons -->
         <div class="row">
             <div id="score"></div>
         </div>
+<!-- Start of Timer and Score classes for JS attachment -->
         <div class="row">
             <div class="col-lg-6 col-sm-12 d-flex justify-content-center">
                 <div><h2>Moves:<span class="moves"></span></h2></div>
@@ -65,6 +67,8 @@
                 <div><h2>Time: <span id="timer"></span></h2></div>
             </div>
         </div>
+<!-- End of Timer and Score classes for JS attachment -->
+<!-- Game board -->
         <div class="hv-rectangle-in" id="overlay">
             <div id="startgame">START GAME</div>
         </div>
