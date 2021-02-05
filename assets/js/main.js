@@ -128,7 +128,7 @@ var funcCalled = 0;
 
   function flipCard() {
     funcCalled++;
-    if (FuncCalled < 3) {}
+    if (FuncCalled < 3) {
     let cardId = this.getAttribute("data-id");
     cardsChosen.push(cardArray[cardId].name);
     cardsChosenId.push(cardId);
