@@ -16,51 +16,51 @@ document.addEventListener('DOMContentLoaded', () => {
 const cardArray = [
     {
         name: 'ace',
-        img: 'images/ace.png'
+        img: '../assets/images/ace.png'
     },
     {
         name: 'luffy',
-        img: 'images/luffy.png'
+        img: '../assets/images/luffy.png'
     },
     {
         name: 'nami',
-        img: 'images/nami.png'
+        img: '../assets/images/nami.png'
     },
     {
         name: 'chopper',
-        img: 'images/chopper.png'
+        img: '../assets/images/chopper.png'
     },
     {
         name: 'nico-robin',
-        img: 'images/nico-robin.png'
+        img: '../assets/images/nico-robin.png'
     },
     {
         name: 'franky',
-        img: 'images/franky.png'
+        img: '../assets/images/franky.png'
     },
         {
         name: 'ace',
-        img: 'images/ace.png'
+        img: '../assets/images/ace.png'
     },
     {
         name: 'luffy',
-        img: 'images/luffy.png'
+        img: '../assets/images/luffy.png'
     },
     {
         name: 'nami',
-        img: 'images/nami.png'
+        img: '../assets/images/nami.png'
     },
     {
         name: 'chopper',
-        img: 'images/chopper.png'
+        img: '../assets/images/chopper.png'
     },
     {
         name: 'nico-robin',
-        img: 'images/nico-robin.png'
+        img: '../assets/images/nico-robin.png'
     },
     {
         name: 'franky',
-        img: 'images/franky.png'
+        img: '../assets/images/franky.png'
     }
 ];
 
@@ -155,6 +155,46 @@ function stopMusic(){
     bgmusic.currentTime = 0;
 }
 
+//The Timer
+function startTimer() {
+    timer = setInterval(countTimer, 1000);
+}
+
+var timer = [];
+var totalSeconds = 0;
+function countTimer() {
+           ++totalSeconds;
+           var minute = Math.floor(totalSeconds /60);
+           var seconds = totalSeconds - (minute*60);
+           if(minute < 10)
+             minute = "0"+minute;
+           if(seconds < 10)
+             seconds = "0"+seconds;
+           document.getElementById("timer").innerHTML =  minute + ":" + seconds;
+        }
+
+function stopTimer() {
+      clearInterval(timer);
+    }
+    
+//Move Counter
+
+let moves = 0;
+const counter = document.querySelector(".moves");
+function moveCounter() {
+  moves++;
+  counter.innerHTML = moves;
+}
+
+//Final Score
+
+const score = document.querySelector("score");
+
+function finalScore(){
+   var scoreSum = moves/totalSeconds*1000
+   var scoreResult =  Math.round(scoreSum)
+   document.getElementById("score").innerHTML = 'Your Score:  ' + scoreResult;
+}
 
 function restart() {
     window.location.reload();

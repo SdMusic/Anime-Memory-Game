@@ -15,75 +15,75 @@ document.addEventListener('DOMContentLoaded', () => {
 const cardArray = [
     {
         name: 'ace',
-        img: 'images/ace.png'
+        img: '../assets/images/ace.png'
     },
     {
         name: 'luffy',
-        img: 'images/luffy.png'
+        img: '../assets/images/luffy.png'
     },
     {
         name: 'nami',
-        img: 'images/nami.png'
+        img: '../assets/images/nami.png'
     },
     {
         name: 'chopper',
-        img: 'images/chopper.png'
+        img: '../assets/images/chopper.png'
     },
     {
         name: 'nico-robin',
-        img: 'images/nico-robin.png'
+        img: '../assets/images/nico-robin.png'
     },
     {
         name: 'franky',
-        img: 'images/franky.png'
+        img: '../assets/images/franky.png'
     },
     {
         name: 'bellamy',
-        img: 'images/bellamy.png'
+        img: '../assets/images/bellamy.png'
     },
     {
         name: 'crocodile',
-        img: 'images/crocodile.png'
+        img: '../assets/images/crocodile.png'
     },
     {
         name: 'doruflamingo',
-        img: 'images/doruflamingo.png'
+        img: '../assets/images/doruflamingo.png'
     },
         {
         name: 'ace',
-        img: 'images/ace.png'
+        img: '../assets/images/ace.png'
     },
     {
         name: 'luffy',
-        img: 'images/luffy.png'
+        img: '../assets/images/luffy.png'
     },
     {
         name: 'nami',
-        img: 'images/nami.png'
+        img: '../assets/images/nami.png'
     },
     {
         name: 'chopper',
-        img: 'images/chopper.png'
+        img: '../assets/images/chopper.png'
     },
     {
         name: 'nico-robin',
-        img: 'images/nico-robin.png'
+        img: '../assets/images/nico-robin.png'
     },
     {
         name: 'franky',
-        img: 'images/franky.png'
+        img: '../assets/images/franky.png'
     },
     {
         name: 'bellamy',
-        img: 'images/bellamy.png'
+        img: '../assets/images/bellamy.png'
     },
     {
         name: 'crocodile',
-        img: 'images/crocodile.png'
+        img: '../assets/images/crocodile.png'
     },
     {
         name: 'doruflamingo',
-        img: 'images/doruflamingo.png'
+        img: '../assets/images/doruflamingo.png'
     },
 ];
 
