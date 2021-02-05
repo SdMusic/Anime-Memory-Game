@@ -6,13 +6,12 @@
     <title>The One Piece Memory Game</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-
+    <link href="assets/favicon/favicon.ico" rel="icon" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -34,7 +33,7 @@
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html"
-                    >HOME <span class="sr-only">(current)</span></a>
+                    >LEVELS <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="level2.html"
@@ -48,13 +47,12 @@
         </div>
     </nav>
 <!--  End of Navbar  -->
-<!-- Start Music buttons and Restart buttons-->
+<!-- Start Music buttons buttons-->
         <div class="center1">
             <button class="button" onclick="stopMusic()">Stop Music</button>
             <button class="button" onclick="bgMusic()"> Play music</button>
-            <button class="button" onclick="restart()">Restart</button>
         </div>
-<!-- End of Music buttons and Restart buttons -->
+<!-- End of Music buttons buttons -->
         <div class="row">
             <div id="score"></div>
         </div>
@@ -72,10 +70,21 @@
         <div class="hv-rectangle-in" id="overlay">
             <div id="startgame">START GAME</div>
         </div>
-            <div><span id="result"></span></div>                
-            <div class="center">
-                    <div class="grid"></div>
-            </div>
-    <script src="main.js"></script>
+        <div class="row">
+            <span id="result"></span>
+        </div>                
+        <div class="center">
+            <div class="grid"></div>
+        </div>
+<!-- Restart Button-->
+        <div class="center1">
+                <button class="button" onclick="restart()">Restart</button>
+        </div>
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>

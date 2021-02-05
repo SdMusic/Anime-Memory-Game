@@ -3,8 +3,8 @@ var overlay = $('#overlay');
         overlay
            .hide()
             .off();
+           bgMusic();
            startTimer();
-            bgMusic();
 
    });
 
@@ -49,7 +49,19 @@ const cardArray = [
         name: 'doruflamingo',
         img: 'images/doruflamingo.png'
     },
-        {
+    {
+        name: 'foxy',
+        img: 'images/foxy.png'
+    },
+    {
+        name: 'mihawk',
+        img: 'images/mihawk.png'
+    },
+    {
+        name: 'kuro',
+        img: 'images/kuro.png'
+    },
+    {
         name: 'ace',
         img: 'images/ace.png'
     },
@@ -85,6 +97,18 @@ const cardArray = [
         name: 'doruflamingo',
         img: 'images/doruflamingo.png'
     },
+    {
+        name: 'foxy',
+        img: 'images/foxy.png'
+    },
+    {
+        name: 'mihawk',
+        img: 'images/mihawk.png'
+    },
+    {
+        name: 'kuro',
+        img: 'images/kuro.png'
+    },
 ];
 
 //The Card Shuffle
@@ -103,7 +127,7 @@ const cardArray = [
     for (let i = 0; i < cardArray.length; i++) {
       const card = document.createElement('img');
       card.classList.add('hvr-float-shadow');
-      card.setAttribute('src', 'images/blank.jpg');
+      card.setAttribute('src', '../assets/images/blank.jpg');
       card.setAttribute('data-id', i);
       card.addEventListener('click', flipCard);
       grid.appendChild(card);
@@ -118,8 +142,8 @@ const cardArray = [
     const optionTwoId = cardsChosenId[1];
     
     if(optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute('src', 'images/blank.jpg');
-      cards[optionTwoId].setAttribute('src', 'images/blank.jpg');
+      cards[optionOneId].setAttribute('src', '../assets/images/blank.jpg');
+      cards[optionTwoId].setAttribute('src', '../assets/images/blank.jpg');
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
       laugh.play();
@@ -129,8 +153,8 @@ const cardArray = [
       cards[optionTwoId].removeEventListener('click', flipCard);
       cardsWon.push(cardsChosen);
     } else {
-      cards[optionOneId].setAttribute('src', 'images/blank.jpg');
-      cards[optionTwoId].setAttribute('src', 'images/blank.jpg');
+      cards[optionOneId].setAttribute('src', '../assets/images/blank.jpg');
+      cards[optionTwoId].setAttribute('src', '../assets/images/blank.jpg');
     }
     cardsChosen = [];
     cardsChosenId = [];
@@ -201,7 +225,6 @@ function countTimer() {
 function stopTimer() {
       clearInterval(timer);
     }
-    
 //Move Counter
 
 let moves = 0;

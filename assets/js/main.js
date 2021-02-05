@@ -80,7 +80,7 @@ const cardArray = [
     for (let i = 0; i < cardArray.length; i++) {
       const card = document.createElement('img');
       card.classList.add('hvr-float-shadow');
-      card.setAttribute('src', 'images/blank.jpg');
+      card.setAttribute('src', '../assets/images/blank.jpg');
       card.setAttribute('data-id', i);
       card.addEventListener('click', flipCard);
       grid.appendChild(card);
@@ -95,8 +95,8 @@ const cardArray = [
     const optionTwoId = cardsChosenId[1];
     
     if(optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute('src', 'images/blank.jpg');
-      cards[optionTwoId].setAttribute('src', 'images/blank.jpg');
+      cards[optionOneId].setAttribute('src', '../assets/images/blank.jpg');
+      cards[optionTwoId].setAttribute('src', '../assets/images/blank.jpg');
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
       laugh.play();
@@ -106,8 +106,8 @@ const cardArray = [
       cards[optionTwoId].removeEventListener('click', flipCard);
       cardsWon.push(cardsChosen);
     } else {
-      cards[optionOneId].setAttribute('src', 'images/blank.jpg');
-      cards[optionTwoId].setAttribute('src', 'images/blank.jpg');
+      cards[optionOneId].setAttribute('src', '../assets/images/blank.jpg');
+      cards[optionTwoId].setAttribute('src', '../assets/images/blank.jpg');
     }
     cardsChosen = [];
     cardsChosenId = [];
@@ -134,7 +134,6 @@ const cardArray = [
     }
   }
 
-
   createBoard();
 });
 
@@ -151,52 +150,11 @@ function bgMusic() {
     bgmusic.play();
 }
 
-
 function stopMusic(){
     bgmusic.pause();
     bgmusic.currentTime = 0;
 }
 
-//The Timer
-function startTimer() {
-    timer = setInterval(countTimer, 1000);
-}
-
-var timer = [];
-var totalSeconds = 0;
-function countTimer() {
-           ++totalSeconds;
-           var minute = Math.floor(totalSeconds /60);
-           var seconds = totalSeconds - (minute*60);
-           if(minute < 10)
-             minute = "0"+minute;
-           if(seconds < 10)
-             seconds = "0"+seconds;
-           document.getElementById("timer").innerHTML =  minute + ":" + seconds;
-        }
-
-function stopTimer() {
-      clearInterval(timer);
-    }
-    
-//Move Counter
-
-let moves = 0;
-const counter = document.querySelector(".moves");
-function moveCounter() {
-  moves++;
-  counter.innerHTML = moves;
-}
-
-//Final Score
-
-const score = document.querySelector("score");
-
-function finalScore(){
-   var scoreSum = moves/totalSeconds*1000
-   var scoreResult =  Math.round(scoreSum)
-   document.getElementById("score").innerHTML = 'Your Score:  ' + scoreResult;
-}
 
 function restart() {
     window.location.reload();
