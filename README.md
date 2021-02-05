@@ -96,15 +96,24 @@ All versions are held on the master branch.
 
 Prior to deployment, the site could be viewed in real time by adding the following command to the terminal window, and selecting "Open Browser" from the modal that displays: python3 -m http.server
 
-## Credits and Acknowledgements
-Code snippets
-Snippets of code that I edited and used as examples are listed below:
 
+## Bugs & Fixes
+- timer starts when page loaded - added empty global var and assigned start function to fill
+- Game able to be played before timer start - overlay added with pointer null to a start game fuction
+- when clicked in quick succesion 3 card can remain displayed.
+- score displayed in long number
+- stop timer function not working -scope issue
+
+## Credits and Acknowledgements
+
+### Code snippets
+Snippets of code that I edited and used as examples are listed below:
 - Button styling: https://fdossena.com/?p=html5cool/buttons/i.frag
 - Navs from: (https://getbootstrap.com/docs/4.0/components/navs/)
 - Columns from: (https://getbootstrap.com/docs/4.0/layout/grid/)
 - Contact Form from: (https://getbootstrap.com/docs/4.0/components/forms/)
 - Spacing Utilities - (https://getbootstrap.com/docs/4.0/utilities/spacing/)
+- Elements from my previous project including readme format.
 
 
 ### Audio from:
