@@ -62,8 +62,12 @@ This website is hosted on GitHub
 
 GitHub Repository:https://github.com/SdMusic/Mk1-Project
 Deployed Link: https://sdmusic.github.io/Mk1-Project/
+
 3.9 W3C Markup Validation Service
 Used to run all html and CSS code through a validation to identify if the code meets current standards and whether or not it is showing errors. https://validator.w3.org/ https://jigsaw.w3.org/css-validator/validator
+
+3.10 JShint service 
+Used to run all Javascript through a validation to identify any code not confoming to current standards.
 
 4.0 Screenshot - Full Page Screen Capture
 This is a chrome extension used to capture full screen images
