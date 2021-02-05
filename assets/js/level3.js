@@ -15,99 +15,99 @@ document.addEventListener('DOMContentLoaded', () => {
 const cardArray = [
     {
         name: 'ace',
-        img: '../assets/images/ace.png'
+        img: ' assets/images/ace.png'
     },
     {
         name: 'luffy',
-        img: '../assets/images/luffy.png'
+        img: ' assets/images/luffy.png'
     },
     {
         name: 'nami',
-        img: '../assets/images/nami.png'
+        img: ' assets/images/nami.png'
     },
     {
         name: 'chopper',
-        img: '../assets/images/chopper.png'
+        img: ' assets/images/chopper.png'
     },
     {
         name: 'nico-robin',
-        img: '../assets/images/nico-robin.png'
+        img: ' assets/images/nico-robin.png'
     },
     {
         name: 'franky',
-        img: '../assets/images/franky.png'
+        img: ' assets/images/franky.png'
     },
     {
         name: 'bellamy',
-        img: '../assets/images/bellamy.png'
+        img: ' assets/images/bellamy.png'
     },
     {
         name: 'crocodile',
-        img: '../assets/images/crocodile.png'
+        img: ' assets/images/crocodile.png'
     },
     {
         name: 'doruflamingo',
-        img: '../assets/images/doruflamingo.png'
+        img: ' assets/images/doruflamingo.png'
     },
     {
         name: 'foxy',
-        img: '../assets/images/foxy.png'
+        img: ' assets/images/foxy.png'
     },
     {
         name: 'mihawk',
-        img: '../assets/images/mihawk.png'
+        img: ' assets/images/mihawk.png'
     },
     {
         name: 'kuro',
-        img: '../assets/images/kuro.png'
+        img: ' assets/images/kuro.png'
     },
     {
         name: 'ace',
-        img: '../assets/images/ace.png'
+        img: ' assets/images/ace.png'
     },
     {
         name: 'luffy',
-        img: '../assets/images/luffy.png'
+        img: ' assets/images/luffy.png'
     },
     {
         name: 'nami',
-        img: '../assets/images/nami.png'
+        img: ' assets/images/nami.png'
     },
     {
         name: 'chopper',
-        img: '../assets/images/chopper.png'
+        img: ' assets/images/chopper.png'
     },
     {
         name: 'nico-robin',
-        img: '../assets/images/nico-robin.png'
+        img: ' assets/images/nico-robin.png'
     },
     {
         name: 'franky',
-        img: '../assets/images/franky.png'
+        img: ' assets/images/franky.png'
     },
     {
         name: 'bellamy',
-        img: '../assets/images/bellamy.png'
+        img: ' assets/images/bellamy.png'
     },
     {
         name: 'crocodile',
-        img: '../assets/images/crocodile.png'
+        img: ' assets/images/crocodile.png'
     },
     {
         name: 'doruflamingo',
-        img: '../assets/images/doruflamingo.png'
+        img: ' assets/images/doruflamingo.png'
     },
     {
         name: 'foxy',
-        img: '../assets/images/foxy.png'
+        img: ' assets/images/foxy.png'
     },
     {
         name: 'mihawk',
-        img: '../assets/images/mihawk.png'
+        img: ' assets/images/mihawk.png'
     },
     {
         name: 'kuro',
-        img: '../assets/images/kuro.png'
+        img: ' assets/images/kuro.png'
     },
 ];
 
@@ -127,7 +127,7 @@ const cardArray = [
     for (let i = 0; i < cardArray.length; i++) {
       const card = document.createElement('img');
       card.classList.add('hvr-float-shadow');
-      card.setAttribute('src', '../assets/images/blank.jpg');
+      card.setAttribute('src', ' assets/images/blank.jpg');
       card.setAttribute('data-id', i);
       card.addEventListener('click', flipCard);
       grid.appendChild(card);
@@ -142,8 +142,8 @@ const cardArray = [
     const optionTwoId = cardsChosenId[1];
     
     if(optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute('src', '../assets/images/blank.jpg');
-      cards[optionTwoId].setAttribute('src', '../assets/images/blank.jpg');
+      cards[optionOneId].setAttribute('src', ' assets/images/blank.jpg');
+      cards[optionTwoId].setAttribute('src', ' assets/images/blank.jpg');
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
       laugh.play();
@@ -153,8 +153,8 @@ const cardArray = [
       cards[optionTwoId].removeEventListener('click', flipCard);
       cardsWon.push(cardsChosen);
     } else {
-      cards[optionOneId].setAttribute('src', '../assets/images/blank.jpg');
-      cards[optionTwoId].setAttribute('src', '../assets/images/blank.jpg');
+      cards[optionOneId].setAttribute('src', ' assets/images/blank.jpg');
+      cards[optionTwoId].setAttribute('src', ' assets/images/blank.jpg');
     }
     cardsChosen = [];
     cardsChosenId = [];
