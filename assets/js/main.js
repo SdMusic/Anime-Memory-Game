@@ -95,6 +95,7 @@ const cardArray = [
     const cards = document.querySelectorAll("img");
     const optionOneId = cardsChosenId[0];
     const optionTwoId = cardsChosenId[1];
+    cardsFlipped = 0;
     
     if(optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
@@ -136,7 +137,7 @@ var cardsFlipped = 0;
     flipSound.play();
     moveCounter();
     if (cardsChosen.length ===2) {
-      setTimeout(checkForMatch, 500);
+        setTimeout(checkForMatch, 500);
     }
   }
 }

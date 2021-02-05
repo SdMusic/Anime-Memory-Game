@@ -25,7 +25,7 @@ body {
     font-style: normal;
     font-size: 80px;
     color: whitesmoke;
-    text-shadow: 2px 2px #a1a19c;
+    text-shadow: 2px 2px 0px #000000b8;
     margin: auto;
     padding-bottom: 20px;
 }
@@ -57,7 +57,7 @@ body {
 
 
 .button {
-    display: inline-block;
+     display: inline-block;
     padding: 0.3em 1.2em;
     margin: 0 0.3em 0.3em 0;
     border-radius: 2em;
@@ -73,6 +73,7 @@ body {
     margin-right: 3vw;
     margin-left: 3vw;
     box-shadow: 4px 5px 11px #0000006b;
+    text-shadow: 1px 1px 2px #0000009e;
 }
 
 .button:focus {
