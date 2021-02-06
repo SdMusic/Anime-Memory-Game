@@ -258,11 +258,13 @@ div.grid-lv3 img{
 /* --ScoreBoard -- */
 
 #score {
+    font-size: 60px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #result{
+    font-size: 60px;
     margin-left: auto;
     margin-right: auto;
 }

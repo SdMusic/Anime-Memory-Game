@@ -151,7 +151,7 @@ var cardsFlipped = 0;
 //The Sound Board
 
 var bgmusic = new Audio("assets/audio/bg-music.mp3");
-var win = new Audio("assets/audio/win.wav");
+var win = new Audio("assets/audio/fireworks-end.mp3");
 var flipSound = new Audio("assets/audio/woosh.wav");
 var laugh = new Audio("assets/audio/luffy-laugh.wav");
 flipSound.volume = 0.1;
