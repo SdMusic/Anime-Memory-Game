@@ -84,7 +84,7 @@ const cardArray = [
       card.classList.add("hvr-float-shadow");
       card.setAttribute("src", "assets/images/blank.jpg");
       card.setAttribute("data-id", i);
-      card.addEventListener("click", flipCard);
+      card.addEventListener("mousedown", flipCard);
       grid.appendChild(card);
     }
   }
@@ -105,8 +105,10 @@ const cardArray = [
       laugh.play();
       cards[optionOneId].classList.remove("hvr-float-shadow");
       cards[optionTwoId].classList.remove("hvr-float-shadow");
-      cards[optionOneId].removeEventListener("click", flipCard);
-      cards[optionTwoId].removeEventListener("click", flipCard);
+      cards[optionOneId].classList.add("float-shadow");
+      cards[optionTwoId].classList.add("float-shadow");
+      cards[optionOneId].removeEventListener("mousedown", flipCard);
+      cards[optionTwoId].removeEventListener("mousedown", flipCard);
       cardsWon.push(cardsChosen);
     } else {
       cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
