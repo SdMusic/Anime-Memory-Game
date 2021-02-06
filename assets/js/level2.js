@@ -250,3 +250,4 @@ function startGame(){
 function restart() {
     window.location.reload();
 }
+
