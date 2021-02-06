@@ -102,13 +102,16 @@ All versions are held on the master branch.
 
 Prior to deployment, the site could be viewed in real time by adding the following command to the terminal window, and selecting "Open Browser" from the modal that displays: python3 -m http.server
 
+## Testing
+
 
 ## Bugs & Fixes
-- timer starts when page loaded - added empty global var and assigned start function to fill
+- Timer starts when page loaded - added empty global var and assigned start function to fill
 - Game able to be played before timer start - overlay added with pointer null to a start game fuction
-- when clicked in quick succesion 3 card can remain displayed.
-- score displayed in long number
-- stop timer function not working -scope issue
+- When clicked in quick succesion 3 card can remain displayed. Fixed with global var counting cards flipped and not allowing more than 2 
+with var being reset when check match is called.
+- Score displayed to decimal point, fixed by putting sum through new var and Math.round().
+- Stop timer function not working - Scope changed to correct error.
 
 ## Credits and Acknowledgements
 
@@ -126,6 +129,7 @@ Snippets of code that I edited and used as examples are listed below:
 ### Audio from:
 - https://www.myinstants.com/
 - https://www.voicy.network/tags/luffy
+- https://www.youtube.com/watch?v=9vNmQ8cleT4
 
 ### Images from: 
 - https://shopee.co.th/ope-diy-hand-woven-necklace-rope-bracelet-rope-jade-thread-Chinese-knot-rope-thick-red-rope-pendant-pendant-rope-haybo01-i.132588053.5611983167

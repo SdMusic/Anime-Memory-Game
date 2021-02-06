@@ -122,6 +122,8 @@ const cardArray = [
     if(optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
       cards[optionTwoId].setAttribute("src", "assets/images/blank.jpg");
+      cards[optionOneId].addEventListener("mousedown", flipCard);
+      cards[optionTwoId].addEventListener("mousedown", flipCard);
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
       laugh.play();
@@ -135,6 +137,8 @@ const cardArray = [
     } else {
       cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
       cards[optionTwoId].setAttribute("src", "assets/images/blank.jpg");
+      cards[optionOneId].addEventListener("mousedown", flipCard);
+      cards[optionTwoId].addEventListener("mousedown", flipCard);
     }
     cardsChosen = [];
     cardsChosenId = [];
@@ -156,6 +160,7 @@ var cardsFlipped = 0;
     ++cardsFlipped;
     if (cardsFlipped < 3) {
     let cardId = this.getAttribute("data-id");
+    this.removeEventListener("mousedown", flipCard);
     cardsChosen.push(cardArray[cardId].name);
     cardsChosenId.push(cardId);
     this.setAttribute("src", cardArray[cardId].img);
@@ -239,4 +244,3 @@ function startGame(){
 function restart() {
     window.location.reload();
 }
-
