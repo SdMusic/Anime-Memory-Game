@@ -202,7 +202,7 @@ function moveCounter() {
 const score = document.querySelector("score");
 
 function finalScore(){
-    //document.getElementById("fireworks").classList.add("pyro");
+    document.getElementById("fireworks").classList.add("pyro");
     var scoreSum = moves/totalSeconds*1000
     var scoreResult =  Math.round(scoreSum)
     document.getElementById("score").innerHTML = "Your Score:  " + scoreResult;
