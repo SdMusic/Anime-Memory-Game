@@ -116,11 +116,11 @@ const cardArray = [
 
   cardArray.sort(() => 0.5 - Math.random());
 
-  const grid = document.querySelector(".grid-lv3");
+  const grid = document.querySelector(".grid");
   const resultDisplay = document.querySelector("#result");
-  let cardsChosen = [];
-  let cardsChosenId = [];
-  let cardsWon = [];
+  var cardsChosen = [];
+  var cardsChosenId = [];
+  var cardsWon = [];
 
 //Creating the Board
 
@@ -128,9 +128,9 @@ const cardArray = [
     for (let i = 0; i < cardArray.length; i++) {
       const card = document.createElement("img");
       card.classList.add("hvr-float-shadow");
-      card.setAttribute("src", " assets/images/blank.jpg");
+      card.setAttribute("src", "assets/images/blank.jpg");
       card.setAttribute("data-id", i);
-      card.addEventListener("click", flipCard);
+      card.addEventListener("mousedown", flipCard);
       grid.appendChild(card);
     }
   }
@@ -141,26 +141,30 @@ const cardArray = [
     const cards = document.querySelectorAll("img");
     const optionOneId = cardsChosenId[0];
     const optionTwoId = cardsChosenId[1];
+    cardsFlipped = 0;
     
     if(optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute("src", " assets/images/blank.jpg");
-      cards[optionTwoId].setAttribute("src", " assets/images/blank.jpg");
+      cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
+      cards[optionTwoId].setAttribute("src", "assets/images/blank.jpg");
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
       laugh.play();
       cards[optionOneId].classList.remove("hvr-float-shadow");
       cards[optionTwoId].classList.remove("hvr-float-shadow");
-      cards[optionOneId].removeEventListener("click", flipCard);
-      cards[optionTwoId].removeEventListener("click", flipCard);
+      cards[optionOneId].classList.add("float-shadow");
+      cards[optionTwoId].classList.add("float-shadow");
+      cards[optionOneId].removeEventListener("mousedown", flipCard);
+      cards[optionTwoId].removeEventListener("mousedown", flipCard);
       cardsWon.push(cardsChosen);
     } else {
-      cards[optionOneId].setAttribute("src", " assets/images/blank.jpg");
-      cards[optionTwoId].setAttribute("src", " assets/images/blank.jpg");
+      cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
+      cards[optionTwoId].setAttribute("src", "assets/images/blank.jpg");
     }
     cardsChosen = [];
     cardsChosenId = [];
     if  (cardsWon.length === cardArray.length/2) {
       resultDisplay.textContent = "Yattaaaa!!! You are the Pirate King!!";
+
       stopMusic();
       stopTimer();
       win.play();
@@ -170,7 +174,11 @@ const cardArray = [
 
 // Card Flip
 
+var cardsFlipped = 0;
+
   function flipCard() {
+    ++cardsFlipped;
+    if (cardsFlipped < 3) {
     let cardId = this.getAttribute("data-id");
     cardsChosen.push(cardArray[cardId].name);
     cardsChosenId.push(cardId);
@@ -178,10 +186,10 @@ const cardArray = [
     flipSound.play();
     moveCounter();
     if (cardsChosen.length ===2) {
-      setTimeout(checkForMatch, 500);
+        setTimeout(checkForMatch, 500);
     }
   }
-
+}
 
   createBoard();
 });
@@ -189,7 +197,7 @@ const cardArray = [
 //The Sound Board
 
 var bgmusic = new Audio("assets/audio/bg-music.mp3");
-var win = new Audio("assets/audio/win.wav");
+var win = new Audio("assets/audio/fireworks-end.mp3");
 var flipSound = new Audio("assets/audio/woosh.wav");
 var laugh = new Audio("assets/audio/luffy-laugh.wav");
 flipSound.volume = 0.1;
@@ -198,7 +206,6 @@ laugh.volume = 0.1;
 function bgMusic() {
     bgmusic.play();
 }
-
 
 function stopMusic(){
     bgmusic.pause();
@@ -226,6 +233,7 @@ function countTimer() {
 function stopTimer() {
       clearInterval(timer);
     }
+    
 //Move Counter
 
 let moves = 0;
@@ -240,15 +248,17 @@ function moveCounter() {
 const score = document.querySelector("score");
 
 function finalScore(){
-   var scoreSum = moves/totalSeconds*1000
-   var scoreResult =  Math.round(scoreSum)
-   document.getElementById("score").innerHTML = "Your Score:  " + scoreResult;
+    document.getElementById("fireworks").classList.add("pyro");
+    var scoreSum = moves/totalSeconds*1000
+    var scoreResult =  Math.round(scoreSum)
+    document.getElementById("score").innerHTML = "Your Score:  " + scoreResult;
 }
+
+// Start & Reset Game
 
 function startGame(){
     document.getElementById("gameboard").style["pointer-events"] = "all"
 }
-
 
 function restart() {
     window.location.reload();
