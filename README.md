@@ -33,11 +33,13 @@ As a anime fan with some time to kill why not play a memory game. Well hello the
 The website consists of four pages, accessible through the homepage navigation links and a navigation bar at the top of each level page.
 
 * Home Page: Header, footer and a navigation panel consisting of picture links and text for the varying game levels.
-* Level 1: Header, footer and game panel made of 12 cards showing blank backs and allowing the play of the memory game.
-* Level 2: Header, footer and game panel made of 18 cards showing blank backs and allowing the play of the memory game.
-* Level 3: Header, footer and game panel made of 24 cards showing blank backs and allowing the play of the memory game.
+* Level 1: Header, nav and game panel made of 12 cards showing blank backs and allowing the play of the memory game.
+* Level 2: Header, nav and game panel made of 18 cards showing blank backs and allowing the play of the memory game.
+* Level 3: Header, nav and game panel made of 24 cards showing blank backs and allowing the play of the memory game.
 
+### WireFrames from concept
 
+Are all located in a pdf <a href="assets/wireframes/Anime Memory Wirerames.pdf" target="_top">Anime Memory WireFrames</a>
 
 
 ## 3 Technologies Used
