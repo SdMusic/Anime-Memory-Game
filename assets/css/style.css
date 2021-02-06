@@ -282,6 +282,7 @@ div.grid-lv3 img{
 
 #fireworks {
     overflow: hidden;
+    z-index: 1;
 }
 
 .pyro > .before, .pyro > .after {
