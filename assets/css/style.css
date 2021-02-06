@@ -202,6 +202,17 @@ div.grid-lv3 img{
     z-index: 10;
 }
 
+.overlay-win {
+   /*background: rgba(0, 0, 0, 0.486);*/
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgb(18 18 23 / 83%) 30%, rgb(62 58 97 / 70%) 70%, rgba(0,212,255,0) 100%);
+    bottom: auto;
+    left: 0px;
+    position: fixed;
+    right: 0px;
+    top: auto;
+    z-index: 10;
+}
+
 #startgame {
     height: 300px;
     margin: auto;
