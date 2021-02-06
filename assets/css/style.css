@@ -81,6 +81,13 @@ body {
 }
 
 img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+img {
     height:245px;
     width: 185px;
 }
@@ -245,7 +252,7 @@ div.grid-lv3 img{
 }
 
 #result{
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
 }
 

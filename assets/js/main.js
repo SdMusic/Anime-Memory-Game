@@ -118,6 +118,7 @@ const cardArray = [
     cardsChosenId = [];
     if  (cardsWon.length === cardArray.length/2) {
       resultDisplay.textContent = "Yattaaaa!!! You are the Pirate King!!";
+
       stopMusic();
       stopTimer();
       win.play();
@@ -201,10 +202,13 @@ function moveCounter() {
 const score = document.querySelector("score");
 
 function finalScore(){
-   var scoreSum = moves/totalSeconds*1000
-   var scoreResult =  Math.round(scoreSum)
-   document.getElementById("score").innerHTML = "Your Score:  " + scoreResult;
+    //document.getElementById("fireworks").classList.add("pyro");
+    var scoreSum = moves/totalSeconds*1000
+    var scoreResult =  Math.round(scoreSum)
+    document.getElementById("score").innerHTML = "Your Score:  " + scoreResult;
 }
+
+// Start & Reset Game
 
 function startGame(){
     document.getElementById("gameboard").style["pointer-events"] = "all"
