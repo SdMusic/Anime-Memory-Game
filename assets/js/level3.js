@@ -116,11 +116,11 @@ const cardArray = [
 
   cardArray.sort(() => 0.5 - Math.random());
 
-  const grid = document.querySelector(".grid");
+  const grid = document.querySelector(".grid-lv3");
   const resultDisplay = document.querySelector("#result");
-  var cardsChosen = [];
-  var cardsChosenId = [];
-  var cardsWon = [];
+  let cardsChosen = [];
+  let cardsChosenId = [];
+  let cardsWon = [];
 
 //Creating the Board
 
@@ -128,9 +128,9 @@ const cardArray = [
     for (let i = 0; i < cardArray.length; i++) {
       const card = document.createElement("img");
       card.classList.add("hvr-float-shadow");
-      card.setAttribute("src", "assets/images/blank.jpg");
+      card.setAttribute("src", " assets/images/blank.jpg");
       card.setAttribute("data-id", i);
-      card.addEventListener("mousedown", flipCard);
+      card.addEventListener("click", flipCard);
       grid.appendChild(card);
     }
   }
