@@ -211,6 +211,12 @@ function finalScore(){
     var scoreSum = moves/totalSeconds*1000
     var scoreResult =  Math.round(scoreSum)
     document.getElementById("score").innerHTML = "Your Score:  " + scoreResult;
+    document.getElementById("spin").childNodes[0].className = "spin";
+
+    var nodes = document.getElementById("spin").childNodes;
+    for (var i=0; i<nodes.length; i++) {
+    nodes[i].classList.add("spin");
+    }
 }
 
 // Start & Reset Game

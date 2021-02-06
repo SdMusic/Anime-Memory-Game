@@ -261,14 +261,24 @@ div.grid-lv3 img{
 
 #score {
     font-size: 60px;
+    font-weight: 600;
     margin-left: auto;
     margin-right: auto;
+    text-shadow:4px 7px 16px #a71d1dee;;
+    background: -webkit-linear-gradient(#e6071c, #e6f508);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #result{
     font-size: 60px;
+    font-weight: 600;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 4px 7px 16px #a71d1dee;;
+    background: -webkit-linear-gradient(#e6071c, #e6f508);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -278,7 +288,17 @@ div.grid-lv3 img{
     background-position: center;
 }
 
-/* --Fireworks from https://codepen.io/yshlin/pen/ylDEk --*/
+/* --End animation --*/
+
+.spin {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+}
 
 #fireworks {
     overflow: hidden;
