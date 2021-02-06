@@ -215,7 +215,7 @@ function finalScore(){
 
     var nodes = document.getElementById("spin").childNodes;
     for (var i=0; i<nodes.length; i++) {
-    nodes[i].classList.add("spin");
+    nodes[i].classList.add("spin1");
     }
 }
 
