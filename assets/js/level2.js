@@ -143,7 +143,7 @@ const cardArray = [
     cardsChosen = [];
     cardsChosenId = [];
     if  (cardsWon.length === cardArray.length/2) {
-      resultDisplay.textContent = "Yattaaaa!!! You are the Pirate King!!";
+      resultDisplay.innerHTML = "Yattaaaa!!! <br> You are the Pirate King!!";
 
       stopMusic();
       stopTimer();
@@ -232,7 +232,7 @@ function finalScore(){
     document.getElementById("fireworks").classList.add("pyro");
     var scoreSum = moves/totalSeconds*1000;
     var scoreResult =  Math.round(scoreSum);
-    document.getElementById("score").innerHTML = "Your Score:  " + scoreResult;
+    document.getElementById("score").innerHTML = "Your Score: <br>" + scoreResult;
 
      var nodes = document.getElementById("spin").childNodes;
         for (var i=0; i<nodes.length; i++) {

@@ -275,6 +275,7 @@ div.grid-lv3 img{
     font-weight: 600;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
     text-shadow:4px 7px 16px #a71d1dee;;
     background: -webkit-linear-gradient(#e6071c, #e6f508);
     -webkit-background-clip: text;
