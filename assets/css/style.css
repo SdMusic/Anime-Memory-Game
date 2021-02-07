@@ -301,18 +301,9 @@ div.grid-lv3 img{
 
 /* --End animation --*/
 
-.spin {
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
-}
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
-}
 .spin1 {
 transform: rotateY(45deg);
-	animation: rotateAnimation 1s linear infinite;
+	animation: rotateAnimation 2s linear infinite;
 }
 
 @keyframes rotateAnimation {

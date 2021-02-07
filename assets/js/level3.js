@@ -118,9 +118,9 @@ const cardArray = [
 
   const grid = document.querySelector(".grid-lv3");
   const resultDisplay = document.querySelector("#result");
-  let cardsChosen = [];
-  let cardsChosenId = [];
-  let cardsWon = [];
+  var cardsChosen = [];
+  var cardsChosenId = [];
+  var cardsWon = [];
 
 //Creating the Board
 
@@ -128,9 +128,9 @@ const cardArray = [
     for (let i = 0; i < cardArray.length; i++) {
       const card = document.createElement("img");
       card.classList.add("hvr-float-shadow");
-      card.setAttribute("src", " assets/images/blank.jpg");
+      card.setAttribute("src", "assets/images/blank.jpg");
       card.setAttribute("data-id", i);
-      card.addEventListener("click", flipCard);
+      card.addEventListener("mousedown", flipCard);
       grid.appendChild(card);
     }
   }
@@ -274,4 +274,3 @@ function startGame(){
 function restart() {
     window.location.reload();
 }
-
