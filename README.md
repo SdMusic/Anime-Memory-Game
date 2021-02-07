@@ -33,12 +33,16 @@ As a anime fan with some time to kill why not play a memory game. Well hello the
 The website consists of four pages, accessible through the homepage navigation links and a navigation bar at the top of each level page.
 
 * Home Page: Header, footer and a navigation panel consisting of picture links and text for the varying game levels.
+Page link: (https://sdmusic.github.io/Anime-Memory-Game/index.html)
 <img src="assets/images/homepage.png">
 * Level 1: Header, nav and game panel made of 12 cards showing blank backs and allowing the play of the memory game.
+Page link: (https://sdmusic.github.io/Anime-Memory-Game/level1.html)
 <img src="assets/images/level1.png">
 * Level 2: Header, nav and game panel made of 18 cards showing blank backs and allowing the play of the memory game.
+Page link: (https://sdmusic.github.io/Anime-Memory-Game/level2.html)
 <img src="assets/images/level2.png">
 * Level 3: Header, nav and game panel made of 24 cards showing blank backs and allowing the play of the memory game.
+Page link: (https://sdmusic.github.io/Anime-Memory-Game/level3.html)
 <img src="assets/images/level3.png">
 
 ### WireFrames from concept
@@ -154,10 +158,30 @@ Test 3: Restart, reloads the current page to restart the game on onclick functio
 Result: Current page is reloaded on onclick function
 
 ### Moves counter
+Test 1: Clicked card displays count for each card clicked in moves div
+Result: Displays each card clicked
+Test 2: CLicking outside cards to test only cards move counter
+Result: Only cards being clicked moves counter
+Test 4: Moves position displays correctly
+Result: Moves shows in correct positioning on responsive design
 
 ### Timer
+Test 1: Timer Displays correctly
+Result: Displays minutes and seconds
+Test 2: Timer starts at set times
+Result: Only starts when overlay start game is clicked
+Test 3: Timer stops at correct point
+Result: Timer stops when game is over
+Test 4: Timer position displays correctly
+Result: Timer shows in correct positioning on responsive design
+
 
 ### Js functions
+
+Test 1: Functions display intend result and do not contradict any other function
+Result: All functions display intended results
+Test 2: Game used in different ways
+Result: Functions complete intended function correctly
 
 
 
