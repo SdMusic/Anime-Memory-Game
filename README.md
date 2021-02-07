@@ -129,59 +129,59 @@ instructions of try to break this.
 
 ### Navigation Bar
 
-Test 1: Click each navigation link
-Result: Verify page navigates to correct page
-Test 2: Move through responsive sizing
-Result: All elements respond to test 1 
-Test 3: Hamburger icon activates at right point and links respond
-Result: Hamburger activates at correct point and links respond to test 1
+- Test 1: Click each navigation link
+- Result: Verify page navigates to correct page
+- Test 2: Move through responsive sizing
+- Result: All elements respond to test 1 
+- Test 3: Hamburger icon activates at right point and links respond
+- Result: Hamburger activates at correct point and links respond to test 1
 
 ### Navigation HomePage
-Test 1: Click each navigation link
-Result: Verify page navigates to correct page
-Test 2: Move through responsive sizing
-Result: All elements are responsive and fufill test 1 
+- Test 1: Click each navigation link
+- Result: Verify page navigates to correct page
+- Test 2: Move through responsive sizing
+- Result: All elements are responsive and fufill test 1 
 
 ### Gameboard (.grid)
-Test 1: Images display in correct place and are responsive
-Result: All images correct and grid responds in intended manor.
-Test 2: noselect and click and drag abilities removed
-Result: noselect and click and drag abilities removed so unable to select or drag cards in grid
-Test 3:
+- Test 1: Images display in correct place and are responsive
+- Result: All images correct and grid responds in intended manor.
+- Test 2: noselect and click and drag abilities removed
+- Result: noselect and click and drag abilities removed so unable to select or drag cards in grid
+- Test 3:
 
 ### JavaScript linked buttons
-Test 1: Stopmusic, stops the music on onclick function
-Result: Stops the music on onclick function
-Test 2: Playmusic, starts the intend music on onclick function
-Result: Starts the intend music on onclick function
-Test 3: Restart, reloads the current page to restart the game on onclick function
-Result: Current page is reloaded on onclick function
+- Test 1: Stopmusic, stops the music on onclick function
+- Result: Stops the music on onclick function
+- Test 2: Playmusic, starts the intend music on onclick function
+- Result: Starts the intend music on onclick function
+- Test 3: Restart, reloads the current page to restart the game on onclick function
+- Result: Current page is reloaded on onclick function
 
 ### Moves counter
-Test 1: Clicked card displays count for each card clicked in moves div
-Result: Displays each card clicked
-Test 2: CLicking outside cards to test only cards move counter
-Result: Only cards being clicked moves counter
-Test 4: Moves position displays correctly
-Result: Moves shows in correct positioning on responsive design
+- Test 1: Clicked card displays count for each card clicked in moves div
+- Result: Displays each card clicked
+- Test 2: CLicking outside cards to test only cards move counter
+- Result: Only cards being clicked moves counter
+- Test 4: Moves position displays correctly
+- Result: Moves shows in correct positioning on responsive design
 
 ### Timer
-Test 1: Timer Displays correctly
-Result: Displays minutes and seconds
-Test 2: Timer starts at set times
-Result: Only starts when overlay start game is clicked
-Test 3: Timer stops at correct point
-Result: Timer stops when game is over
-Test 4: Timer position displays correctly
-Result: Timer shows in correct positioning on responsive design
+- Test 1: Timer Displays correctly
+- Result: Displays minutes and seconds
+- Test 2: Timer starts at set times
+- Result: Only starts when overlay start game is clicked
+- Test 3: Timer stops at correct point
+- Result: Timer stops when game is over
+- Test 4: Timer position displays correctly
+- Result: Timer shows in correct positioning on responsive design
 
 
 ### Js functions
 
-Test 1: Functions display intend result and do not contradict any other function
-Result: All functions display intended results
-Test 2: Game used in different ways
-Result: Functions complete intended function correctly
+- Test 1: Functions display intend result and do not contradict any other function
+- Result: All functions display intended results
+- Test 2: Game used in different ways
+- Result: Functions complete intended function correctly
 
 
 
