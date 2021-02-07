@@ -258,9 +258,13 @@ function finalScore(){
     var scoreResult =  Math.round(scoreSum)
     document.getElementById("score").innerHTML = "Your Score:  " + scoreResult;
 
-    var nodes = document.getElementById("spin").childNodes;
+     var nodes = document.getElementById("spin").childNodes;
     for (var i=0; i<nodes.length; i++) {
     nodes[i].classList.add("spin1");
+    if(i%2==0){
+        nodes[i].classList.remove("spin1")
+        nodes[i].classList.add("spin");
+    }
     }
     document.getElementById("overlay-win").classList.add("overlay-win");
 }
