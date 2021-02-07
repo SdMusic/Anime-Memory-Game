@@ -104,6 +104,62 @@ Prior to deployment, the site could be viewed in real time by adding the followi
 
 ## Testing
 
+Testing has been carried out using the following devices/browsers:
+
+Desktop
+Chrome
+Firefox
+Chrome Responsive emulator
+Huawei P30 Pro
+Samsung Galaxy 7
+
+### Page Layouts
+
+I used http://ami.responsivedesign.is/ (source for top picture) to see how the site displays on ranging devices and their viewports, all pages, links, icons performed as expected on all devices.
+
+
+### Target audience Testing
+Target audience testing was maintained through out the development of this project. It was used for design feedback wants 
+of the audience and to uncover any bugs in the application. I had 3 children and 6 adults participate in this testing with the 
+instructions of try to break this.
+
+### Navigation Bar
+
+Test 1: Click each navigation link
+Result: Verify page navigates to correct page
+Test 2: Move through responsive sizing
+Result: All elements respond to test 1 
+Test 3: Hamburger icon activates at right point and links respond
+Result: Hamburger activates at correct point and links respond to test 1
+
+### Navigation HomePage
+Test 1: Click each navigation link
+Result: Verify page navigates to correct page
+Test 2: Move through responsive sizing
+Result: All elements are responsive and fufill test 1 
+
+### Gameboard (.grid)
+Test 1: Images display in correct place and are responsive
+Result: All images correct and grid responds in intended manor.
+Test 2: noselect and click and drag abilities removed
+Result: noselect and click and drag abilities removed so unable to select or drag cards in grid
+Test 3:
+
+### JavaScript linked buttons
+Test 1: Stopmusic, stops the music on onclick function
+Result: Stops the music on onclick function
+Test 2: Playmusic, starts the intend music on onclick function
+Result: Starts the intend music on onclick function
+Test 3: Restart, reloads the current page to restart the game on onclick function
+Result: Current page is reloaded on onclick function
+
+### Moves counter
+
+### Timer
+
+### Js functions
+
+
 
 ## Bugs & Fixes
 - Timer starts when page loaded - added empty global var and assigned start function to fill
