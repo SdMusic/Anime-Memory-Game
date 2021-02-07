@@ -230,15 +230,15 @@ const score = document.querySelector("score");
 
 function finalScore(){
     document.getElementById("fireworks").classList.add("pyro");
-    var scoreSum = moves/totalSeconds*1000
-    var scoreResult =  Math.round(scoreSum)
+    var scoreSum = moves/totalSeconds*1000;
+    var scoreResult =  Math.round(scoreSum);
     document.getElementById("score").innerHTML = "Your Score:  " + scoreResult;
 
      var nodes = document.getElementById("spin").childNodes;
-    for (var i=0; i<nodes.length; i++) {
-    nodes[i].classList.add("spin1");
-    if(i%2==0){
-        nodes[i].classList.remove("spin1")
+        for (var i=0; i<nodes.length; i++) {
+        nodes[i].classList.add("spin1");
+        if(i%2==0){
+        nodes[i].classList.remove("spin1");
         nodes[i].classList.add("spin");
     }
     }
@@ -248,7 +248,7 @@ function finalScore(){
 // Start & Reset Game
 
 function startGame(){
-    document.getElementById("gameboard").style["pointer-events"] = "all"
+    document.getElementById("gameboard").style["pointer-events"] = "all";
 }
 
 function restart() {

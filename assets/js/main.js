@@ -69,7 +69,6 @@ const cardArray = [
 //The Card Shuffle
 
   cardArray.sort(() => 0.5 - Math.random());
-
   const grid = document.querySelector(".grid");
   const resultDisplay = document.querySelector("#result");
   var cardsChosen = [];
@@ -96,7 +95,6 @@ const cardArray = [
     const optionOneId = cardsChosenId[0];
     const optionTwoId = cardsChosenId[1];
     cardsFlipped = 0;
-    
     if(optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
       cards[optionTwoId].setAttribute("src", "assets/images/blank.jpg");
@@ -133,7 +131,6 @@ const cardArray = [
 // Card Flip
 
 var cardsFlipped = 0;
-
   function flipCard() {
     ++cardsFlipped;
     if (cardsFlipped < 3) {
@@ -149,10 +146,8 @@ var cardsFlipped = 0;
     }
   }
 }
-
   createBoard();
 });
-
 //The Sound Board
 
 var bgmusic = new Audio("assets/audio/bg-music.mp3");
@@ -165,12 +160,10 @@ laugh.volume = 0.1;
 function bgMusic() {
     bgmusic.play();
 }
-
 function stopMusic(){
     bgmusic.pause();
     bgmusic.currentTime = 0;
 }
-
 //The Timer
 function startTimer() {
     timer = setInterval(countTimer, 1000);
@@ -208,15 +201,14 @@ const score = document.querySelector("score");
 
 function finalScore(){
     document.getElementById("fireworks").classList.add("pyro");
-    var scoreSum = moves/totalSeconds*1000
-    var scoreResult =  Math.round(scoreSum)
+    var scoreSum = moves/totalSeconds*1000;
+    var scoreResult =  Math.round(scoreSum);
     document.getElementById("score").innerHTML = "Your Score:  " + scoreResult;
-
     var nodes = document.getElementById("spin").childNodes;
     for (var i=0; i<nodes.length; i++) {
     nodes[i].classList.add("spin1");
     if(i%2==0){
-        nodes[i].classList.remove("spin1")
+        nodes[i].classList.remove("spin1");
         nodes[i].classList.add("spin");
     }
     }
@@ -227,7 +219,7 @@ function finalScore(){
 // Start & Reset Game
 
 function startGame(){
-    document.getElementById("gameboard").style["pointer-events"] = "all"
+    document.getElementById("gameboard").style["pointer-events"] = "all";
 }
 
 function restart() {
