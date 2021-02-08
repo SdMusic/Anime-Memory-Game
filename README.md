@@ -27,6 +27,21 @@ The site will be fully responsive and optimized to be viewed on different screen
 ## 1.5 User Stories
 As a anime fan with some time to kill why not play a memory game. Well hello theere 'Anime Memory Game' is here to the rescue. Coming off a google search i know what im expecting and want to get straight to it.
 
+### As a anime fan and developer:
+- I would like to present myself and my work in a way people can enjoy.
+- I need to demonstrate different skills.
+- I want for myself and children to enjoy the concept.
+
+### As a new player:
+
+- I hope to find entertainment which is associated with my interests.
+- I would like to be able to easly access this form of entertainment on multiple devices
+### As a returning player:
+
+- I hope for varying levels of difficulty to provide variaty when playing
+- I would like to check timetable for current days and times for a group trainings.
+- I want to show my friend a location of the fitness studio where we can join for a semi private personal training.
+
 ## 2 Site Content, Structure Concept and Development
 
 ### 2.1 Pages Overview
@@ -198,6 +213,12 @@ instructions of try to break this.
 - Test 2: Game used in different ways
 - Result: Functions complete intended function correctly
 
+## Preformance Testing
+
+I used Lighthouse (https://developers.google.com/web/tools/lighthouse/), prefomance checker to assess the performance of my site.
+screenshot below:
+
+<img src="assets/images/lighthouse.png">
 
 
 ## Bugs & Fixes
