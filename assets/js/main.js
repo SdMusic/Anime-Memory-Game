@@ -3,7 +3,7 @@ var overlay = $("#overlay");
         overlay
             .hide()
             .off();
-            bgMusic();
+            switchMusicWanted();
             startGame();
             startTimer();
 
@@ -142,7 +142,7 @@ var cardsFlipped = 0;
     cardsChosen.push(cardArray[cardId].name);
     cardsChosenId.push(cardId);
     this.setAttribute("src", cardArray[cardId].img);
-    this.setAttribute("alt", cardArray[cardId].name)
+    this.setAttribute("alt", cardArray[cardId].name);
     flipSound.play();
     moveCounter();
     if (cardsChosen.length ===2) {
@@ -161,13 +161,39 @@ var laugh = new Audio("assets/audio/luffy-laugh.wav");
 flipSound.volume = 0.1;
 laugh.volume = 0.1;
 
-function bgMusic() {
-    bgmusic.play();
+var bgMusicActive = false;
+var bgMusicWanted = true; // 
+function switchMusicWanted(){
+    if (bgMusicWanted) {
+      if (!bgMusicActive){
+        bgmusic.play();
+        bgMusicActive = true;
+      }
+      document.getElementById("musicButton").innerHTML = "Pause";
+    } 
+    else {
+      if (bgMusicActive){
+        bgmusic.pause();
+        bgMusicActive = false;
+      }
+      document.getElementById("musicButton").innerHTML = "Play";
+    }
+    bgMusicWanted = !bgMusicWanted;
 }
-function stopMusic(){
-    bgmusic.pause();
-    bgmusic.currentTime = 0;
+function bgMusicStart(){
+    if (bgMusicWanted){
+        bgmusic.play();
+    }
 }
+
+//function bgMusic() {
+ //   bgmusic.play();
+//}
+//function stopMusic(){
+//    bgmusic.pause();
+//    bgmusic.currentTime = 0;
+//}
+
 //The Timer
 function startTimer() {
     timer = setInterval(countTimer, 1000);

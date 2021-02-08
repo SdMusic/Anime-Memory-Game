@@ -51,12 +51,13 @@
         </div>
     </nav>
 <!--  End of Navbar  -->
-<!-- Start Music buttons -->
+<!-- Start Music buttons and Reset Buttons-->
         <div class="center1">
-            <button class="button" onclick="stopMusic()">Stop Music</button>
-            <button class="button" onclick="bgMusic()"> Play music</button>
+            <button id="musicButton" class="button" onclick="switchMusicWanted()">Play/Pause</button>
+            <button class="button" onclick="bgMusicStart = false, bgmusic.pause()"> Mute</button>
+            <button class="button" onclick="restart()">Restart</button>
         </div>
-<!-- End of Music buttons -->
+<!-- End of Music buttons and Reset Buttons-->
          <div class="row">
             <div id="fireworks">
                     <div class="before"></div>
@@ -83,10 +84,6 @@
         </div>              
         <div id="gameboard" class="center">
             <div id="spin" class="grid-lv3 noselect"></div>
-        </div>
-<!-- Restart Button-->
-        <div class="center1">
-                <button class="button" onclick="restart()">Restart</button>
         </div>
 <script src="assets/js/level3.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
