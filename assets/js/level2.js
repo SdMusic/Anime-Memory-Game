@@ -122,6 +122,8 @@ const cardArray = [
     if(optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
       cards[optionTwoId].setAttribute("src", "assets/images/blank.jpg");
+      cards[optionOneId].setAttribute("alt", "anime card back");
+      cards[optionTwoId].setAttribute("alt", "anime card back");
       cards[optionOneId].addEventListener("mousedown", flipCard);
       cards[optionTwoId].addEventListener("mousedown", flipCard);
     }
@@ -137,6 +139,8 @@ const cardArray = [
     } else {
       cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
       cards[optionTwoId].setAttribute("src", "assets/images/blank.jpg");
+      cards[optionOneId].setAttribute("alt", "anime card back");
+      cards[optionTwoId].setAttribute("alt", "anime card back");
       cards[optionOneId].addEventListener("mousedown", flipCard);
       cards[optionTwoId].addEventListener("mousedown", flipCard);
     }
@@ -163,7 +167,8 @@ var cardsFlipped = 0;
     this.removeEventListener("mousedown", flipCard);
     cardsChosen.push(cardArray[cardId].name);
     cardsChosenId.push(cardId);
-    this.setAttribute("src", cardArray[cardId].img);
+    this.setAttribute("src", cardArray[cardId].img)
+    this.setAttribute("alt", cardArray[cardId].name)
     flipSound.play();
     moveCounter();
     if (cardsChosen.length ===2) {
