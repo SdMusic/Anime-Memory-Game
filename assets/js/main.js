@@ -82,6 +82,7 @@ const cardArray = [
       const card = document.createElement("img");
       card.classList.add("hvr-float-shadow");
       card.setAttribute("src", "assets/images/blank.jpg");
+      card.setAttribute("alt", "anime card img");
       card.setAttribute("data-id", i);
       card.addEventListener("mousedown", flipCard);
       grid.appendChild(card);
@@ -98,6 +99,8 @@ const cardArray = [
     if(optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
       cards[optionTwoId].setAttribute("src", "assets/images/blank.jpg");
+      cards[optionOneId].setAttribute("alt", "anime card img");
+      cards[optionTwoId].setAttribute("alt", "anime card img");
       cards[optionOneId].addEventListener("mousedown", flipCard);
       cards[optionTwoId].addEventListener("mousedown", flipCard);
     }

@@ -113,6 +113,14 @@ select Code and click Download the ZIP file.
 after download you can extract the file and use it in your local environment
 Alternatively you can Clone or Fork this repository into your github account.
 
+## Code Validation
+At the and of the project I used two websites to validate a code
+
+- W3C CSS Validator to validate CSS
+- Nu Html Checker to test HTML
+
+Css and html is validated warnings remain on css due to webkits (these have been left to remain as they purely browser intigration)
+
 ## Testing
 
 Testing has been carried out using the following devices/browsers:
