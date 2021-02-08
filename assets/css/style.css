@@ -512,7 +512,7 @@ transform: rotateY(45deg);
 
 @media screen and (max-width: 600px) {
   .title {
-    font-size: 35px;
+    font-size: 34px;
   }
 }
 
@@ -537,7 +537,7 @@ transform: rotateY(45deg);
         justify-content: center;
     }
     img {
-    height:110px;
-    width: 80px;
+    height:105px;
+    width: 75px;
 }
 }

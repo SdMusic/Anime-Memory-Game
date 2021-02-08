@@ -106,6 +106,13 @@ All versions are held on the master branch.
 
 Prior to deployment, the site could be viewed in real time by adding the following command to the terminal window, and selecting "Open Browser" from the modal that displays: python3 -m http.server
 
+To run localy:
+
+Log in to GitHub and click on repository to download
+select Code and click Download the ZIP file.
+after download you can extract the file and use it in your local environment
+Alternatively you can Clone or Fork this repository into your github account.
+
 ## Testing
 
 Testing has been carried out using the following devices/browsers:
