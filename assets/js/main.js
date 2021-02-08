@@ -169,14 +169,14 @@ function switchMusicWanted(){
         bgmusic.play();
         bgMusicActive = true;
       }
-      document.getElementById("musicButton").innerHTML = "Pause";
+      document.getElementById("musicButton").innerHTML = "Mute";
     } 
     else {
       if (bgMusicActive){
         bgmusic.pause();
         bgMusicActive = false;
       }
-      document.getElementById("musicButton").innerHTML = "Play";
+      document.getElementById("musicButton").innerHTML = "Unmute";
     }
     bgMusicWanted = !bgMusicWanted;
 }
