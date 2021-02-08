@@ -3,7 +3,7 @@ var overlay = $("#overlay");
         overlay
             .hide()
             .off();
-            switchMusicWanted();
+            bgMusicStart();
             startGame();
             startTimer();
 
@@ -164,25 +164,31 @@ laugh.volume = 0.1;
 var bgMusicActive = false;
 var bgMusicWanted = true; // 
 function switchMusicWanted(){
+    // switch on/off
+    bgMusicWanted = !bgMusicWanted;
+    // if music is now wanted & isnt active then start playing the music
     if (bgMusicWanted) {
       if (!bgMusicActive){
         bgmusic.play();
         bgMusicActive = true;
       }
+      // show 'mute'  as next click will set music wanted false
       document.getElementById("musicButton").innerHTML = "Mute";
     } 
     else {
+      // if music is now NOT wanted & is active then pause music playing
       if (bgMusicActive){
         bgmusic.pause();
         bgMusicActive = false;
       }
+      // show 'unmute'  as next click will set music wanted false
       document.getElementById("musicButton").innerHTML = "Unmute";
     }
-    bgMusicWanted = !bgMusicWanted;
 }
 function bgMusicStart(){
     if (bgMusicWanted){
         bgmusic.play();
+        bgMusicActive = true;
     }
 }
 
