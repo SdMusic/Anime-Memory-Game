@@ -242,7 +242,7 @@ function stopTimer() {
 //Move Counter
 
 let moves = 0;
-const counter = document.querySelector(".moves");
+var counter = document.querySelector(".moves");
 function moveCounter() {
   moves++;
   counter.innerHTML = moves;
